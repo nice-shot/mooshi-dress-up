@@ -1,5 +1,49 @@
-#mooshi-container > img {
+#game-container {
+    display: flex;
+    justify-content: center;
+}
+
+#game {
     position: absolute;
     width: 500px;
     height: 500px;
+}
+
+#game > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+#mooshi-container > img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+#buttons-container > input {
+    position: absolute;
+    height: 60px;
+}
+
+#btn-next-head {
+    top: 140px;
+    right: 60px;
+}
+
+#btn-prev-head {
+    top: 140px;
+    left: 55px;
+    transform: scaleX(-1);
+}
+
+#btn-next-body {
+    top: 280px;
+    right: 20px
+}
+
+#btn-prev-body {
+    top: 280px;
+    left: 15px;
+    transform: scaleX(-1);
 }

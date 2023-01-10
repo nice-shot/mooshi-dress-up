@@ -3,17 +3,19 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div id="game">
-            <div id="buttons-container">
-                <button id="btn-next-head">Next Head</button>
-                <button id="btn-prev-head">Prev Head</button>
-                <button id="btn-next-body">Next Body</button>
-                <button id="btn-prev-body">Prev Body</button>
-            </div>
-            <div id="mooshi-container">
-                <img id="mooshi-body" src="img/mooshi-body-default.png" />
-                <img id="mooshi-head" src="img/mooshi-head-default.png" />
-                <img id="mooshi-collar" src="img/mooshi-collar-default.png" />
+        <div id="game-container">
+            <div id="game">
+                <div id="mooshi-container">
+                    <img id="mooshi-body" src="img/mooshi-body-default.png" />
+                    <img id="mooshi-head" src="img/mooshi-head-default.png" />
+                    <img id="mooshi-collar" src="img/mooshi-collar-default.png" />
+                </div>
+                <div id="buttons-container">
+                    <input type="image" src="img/arrow.png" id="btn-next-head" alt="Next Head" />
+                    <input type="image" src="img/arrow.png" id="btn-prev-head" alt="Prev Head" />
+                    <input type="image" src="img/arrow.png" id="btn-next-body" alt="Next Body" />
+                    <input type="image" src="img/arrow.png" id="btn-prev-body" alt="Prev Body" />
+                </div>
             </div>
         </div>
         <script src="main.js"></script>
