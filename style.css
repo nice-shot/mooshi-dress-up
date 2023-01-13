@@ -10,6 +10,8 @@
 
 body {
     background-color: #B1453B;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #page-container {
@@ -17,7 +19,6 @@ body {
 
 /* --- Header --- */
 #header-container{
-    overflow: hidden;
     text-align: center;
     padding: 20px;
     margin: auto;
@@ -25,11 +26,13 @@ body {
 
 #header-text {
     font-family: 'Abraham-Regular';
-    font-size: 60px;
+    font-size: 85px;
     color: #F0DA74;
     position: relative;
     text-align: center;
     display: block;
+    /* text-shadow: 3px 3px #D6A616; */
+    text-shadow: 3px 3px 2px black;
 }
 
 /* --- Main Content --- */
@@ -90,6 +93,16 @@ body {
     box-sizing: border-box
 }
 
+#game-bg > img {
+    position: absolute;
+    overflow: auto;
+    top: -215px;
+    right: -720px;
+    opacity: 0.08;
+
+}
+
+
 #oval {
     position: absolute;
     width: 500px;
@@ -97,11 +110,13 @@ body {
     background: #D68D87;
     border-radius: 5000px / 1000px;
     bottom: 50px;
+    box-shadow: 0px 10px #914039;
 }
 
 /* --- Footer --- */
 #footer-container{
     text-align: center;
+    padding: 80px;
 }
 
 #footer-container #logo{
@@ -110,4 +125,5 @@ body {
 
 #footer-text{
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
