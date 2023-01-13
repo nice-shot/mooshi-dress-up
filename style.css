@@ -1,4 +1,9 @@
-#game-container {
+@font-face {
+    font-family: Abraham-Regular;
+    src: url('fonts/Abraham-Regular.woff') format('woff')
+}
+
+#page-container {
     display: flex;
     justify-content: center;
 }
@@ -46,4 +51,35 @@
     top: 280px;
     left: 15px;
     transform: scaleX(-1);
+}
+
+#footer-container{
+    display: grid;
+    justify-content: center;
+    top: 500px;
+}
+
+#footer-container #logo{
+
+}
+
+#footer-text {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    bottom: 150px;
+}
+
+#header-container{
+    display: grid;
+    justify-content: center;
+    /* bottom: 200px; */
+}
+
+#header-text {
+    font-family: 'Abraham-Regular';
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+
 }
