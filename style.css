@@ -1,17 +1,46 @@
+/* --- General --- */
 @font-face {
     font-family: Abraham-Regular;
     src: url('fonts/Abraham-Regular.woff') format('woff')
 }
 
-#page-container {
-    display: flex;
-    justify-content: center;
+* {
+  box-sizing: border-box;
 }
 
+body {
+    background-color: #B1453B;
+}
+
+#page-container {
+}
+
+/* --- Header --- */
+#header-container{
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+#header-text {
+    font-family: 'Abraham-Regular';
+    font-size: 60px;
+    color: #F0DA74;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+/* --- Main Content --- */
 #game {
-    position: absolute;
+    position: relative;
     width: 500px;
     height: 500px;
+    position: relative;
+    display: block;
+    margin: auto;
+  
 }
 
 #game > div {
@@ -53,33 +82,32 @@
     transform: scaleX(-1);
 }
 
+#game-bg {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    box-sizing: border-box
+}
+
+#oval {
+    position: absolute;
+    width: 500px;
+    height: 84px;
+    background: #D68D87;
+    border-radius: 5000px / 1000px;
+    bottom: 50px;
+}
+
+/* --- Footer --- */
 #footer-container{
-    display: grid;
-    justify-content: center;
-    top: 500px;
+    text-align: center;
 }
 
 #footer-container #logo{
-
+    padding: 20px;
 }
 
-#footer-text {
+#footer-text{
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    text-align: center;
-    bottom: 150px;
-}
-
-#header-container{
-    display: grid;
-    justify-content: center;
-    /* bottom: 200px; */
-}
-
-#header-text {
-    font-family: 'Abraham-Regular';
-    font-size: 60px;
-    position: relative;
-    text-align: center;
-
 }
