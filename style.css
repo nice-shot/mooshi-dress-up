@@ -3,6 +3,10 @@
     src: url('fonts/Abraham-Regular.woff') format('woff')
 }
 
+body {
+    background: #b1453b;
+}
+
 #title {
     font-family: 'Abraham-Regular';
     direction: rtl;
@@ -10,9 +14,11 @@
     font-size: 6em;
     /* letter-spacing: 2px; */
     color: #F0DA74;
-    margin: 0px;
     box-sizing: border-box;
-    text-shadow: 3px 3px 0px #2b1d00
+    text-shadow: 3px 3px 0px #2b1d00;
+    margin: 0px;
+    margin-top: 20px
+    
 }
 
 #game-container {
