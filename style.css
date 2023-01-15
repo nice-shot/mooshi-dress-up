@@ -57,25 +57,25 @@ body {
 
 #buttons-container > input {
     position: absolute;
-    width: 10%;
+    width: 6%;
     max-width: 100px;
     max-height: 150px;
 }
 
 #btn-next-head {
-    transform: translate(-80%,150%);
+    transform: translate(-260%,290%)
 }
 
 #btn-prev-head {
-    transform: translate(-800%,150%) scaleX(-1);
+    transform: translate(-1340%,290%) scaleX(-1)
 }
 
 #btn-next-body {
-    transform: translate(-30%,320%);
+    transform: translate(-110%,560%)
 }
 
 #btn-prev-body {
-    transform: translate(-850%,320%) scaleX(-1);
+    transform: translate(-1470%,560%) scaleX(-1)
 }
 
 /* --- Footer --- */
