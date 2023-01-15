@@ -25,19 +25,12 @@ body {
 
 #header-text {
     font-family: 'Abraham-Regular';
-    font-size: 12.5vw;
+    font-size: 6em;
     color: #F0DA74;
     position: relative;
     text-align: center;
     display: block;
     text-shadow: 3px 3px 2px black;
-}
-
-@media screen and (min-width: 1200px) {
-    /* No such thing as max-font-size so I have to do this */
-    #header-text  {
-       font-size: 10em;
-    }
 }
 
 /* --- Main Content --- */
@@ -93,19 +86,6 @@ body {
 
 #btn-prev-body {
     transform: translate(-850%,320%) scaleX(-1);
-}
-
-#oval {
-    position: absolute;
-    width: 60vw;
-    height: 16vw;
-    background: #D68D87;
-    border-radius: 5000px / 1000px;
-    box-shadow: 0px 10px #914039;
-    transform: translate(-30%,420%);
-    z-index: -1;
-    max-height: 133px;
-    max-width: 510px;
 }
 
 /* --- Footer --- */
