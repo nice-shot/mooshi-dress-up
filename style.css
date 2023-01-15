@@ -1,3 +1,20 @@
+@font-face {
+    font-family: Abraham-Regular;
+    src: url('fonts/Abraham-Regular.woff') format('woff')
+}
+
+#title {
+    font-family: 'Abraham-Regular';
+    direction: rtl;
+    text-align: center;
+    font-size: 6em;
+    /* letter-spacing: 2px; */
+    color: #F0DA74;
+    margin: 0px;
+    box-sizing: border-box;
+    text-shadow: 3px 3px 0px #2b1d00
+}
+
 #game-container {
     display: flex;
     justify-content: center;
@@ -5,8 +22,9 @@
 
 #game {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 50em;
+    height: 50em;
+    margin-top: -1em;
 }
 
 #game > div {
@@ -23,27 +41,28 @@
 
 #buttons-container > input {
     position: absolute;
-    height: 60px;
+    height: 6em;
+    font-size: inherit;
 }
 
 #btn-next-head {
-    top: 140px;
-    right: 60px;
+    top: 14em;
+    right: 10em;
 }
 
 #btn-prev-head {
-    top: 140px;
-    left: 55px;
+    top: 14em;
+    left: 8.5em;
     transform: scaleX(-1);
 }
 
 #btn-next-body {
-    top: 280px;
-    right: 20px
+    top: 28em;
+    right: 5em;
 }
 
 #btn-prev-body {
-    top: 280px;
-    left: 15px;
+    top: 28em;
+    left: 4em;
     transform: scaleX(-1);
 }
