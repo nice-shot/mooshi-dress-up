@@ -14,18 +14,9 @@ body {
     overflow-x: hidden;
 }
 
-#page-container {
-}
-
-/* --- Header --- */
-#header-container{
-    text-align: center;
-    padding: 20px;
-}
-
 #header-text {
     font-family: 'Abraham-Regular';
-    font-size: 6em;
+    font-size: 5em;
     color: #F0DA74;
     position: relative;
     text-align: center;
@@ -41,15 +32,14 @@ body {
     max-height: 800px;
     display: block;
     margin: auto;
-    margin-top: -60px;
     aspect-ratio: 1 / 1;
+    top: -40px;
 }
 
 /* horizontal phone */
 @media screen and (max-height: 600px) {
     #game  {
         max-width:600px;
-        top: -60px;
     }
 }
 
