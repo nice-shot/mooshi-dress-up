@@ -27,6 +27,7 @@ async function main() {
     // Setup image elements
     const bodyImg = document.getElementById('mooshi-body');
     const headImg = document.getElementById('mooshi-head');
+    const collarImg = document.getElementById('mooshi-collar');
     let bodyIndex = 0; 
     let headIndex = 0;
 
@@ -58,6 +59,28 @@ async function main() {
     prevHead.onclick = () => {
         headIndex = mod(headIndex - 1, OUTFITS.length);
         updateImages();
+    }
+
+    
+    // Setup download button
+    const downloadBtn = document.getElementById('btn-download');
+    downloadBtn.onclick = () => {
+        console.log('Downloading image!');
+        const canvas = document.getElementById('secret-canvas');
+        const context = canvas.getContext('2d');
+        context.fillStyle = 'blue';
+        context.fillRect(0, 0, 50, 50);
+        context.drawImage(bodyImg, 0, 0);
+        context.drawImage(headImg, 0, 0);
+        context.drawImage(collarImg, 0, 0);
+
+        // Create link to image
+        const a = document.createElement('a');
+        a.href = canvas.toDataURL('image/png');
+        a.download = "Download.png";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     }
 
 }

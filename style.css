@@ -27,7 +27,6 @@ body {
 }
 
 #game {
-    position: absolute;
     width: 50em;
     height: 50em;
     margin-top: -1em;
@@ -71,4 +70,28 @@ body {
     top: 28em;
     left: 4em;
     transform: scaleX(-1);
+}
+
+
+#download-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-download {
+    font-size: 3em;
+    direction: rtl;
+    padding: 0em 1.5em 0.25em;
+    font-family: 'Abraham-Regular';
+    border-radius: 0.5em;
+    color: #c64227;
+    background: #ecdd79;
+    border-style: none;
+    filter: drop-shadow(3px 3px 0px #2b1d00);
+    margin-bottom: 4em;
+}
+
+#btn-download:active {
+    /* filter: none; */
+    transform: scale(0.9);
 }
