@@ -68,16 +68,14 @@ async function main() {
         console.log('Downloading image!');
         const canvas = document.getElementById('secret-canvas');
         const context = canvas.getContext('2d');
-        context.fillStyle = 'blue';
-        context.fillRect(0, 0, 50, 50);
-        context.drawImage(bodyImg, 0, 0);
-        context.drawImage(headImg, 0, 0);
-        context.drawImage(collarImg, 0, 0);
+        context.drawImage(bodyImg, 0, 0, 1500, 1500);
+        context.drawImage(headImg, 0, 0, 1500, 1500);
+        context.drawImage(collarImg, 0, 0, 1500, 1500);
 
         // Create link to image
         const a = document.createElement('a');
         a.href = canvas.toDataURL('image/png');
-        a.download = "Download.png";
+        a.download = "Mooshi.png";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
