@@ -93,6 +93,8 @@ async function main() {
         document.body.removeChild(a);
     }
 
+    // Add particle click effects
+    document.addEventListener('click', throwBall);
 }
 
 window.onload = main;

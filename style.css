@@ -24,6 +24,9 @@ body {
 #game-container {
     display: flex;
     justify-content: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 #game {
@@ -99,3 +102,13 @@ body {
     /* filter: none; */
     transform: scale(0.9);
 }
+
+particle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
