@@ -81,8 +81,8 @@ async function main() {
         const canvas = document.getElementById('secret-canvas');
         const context = canvas.getContext('2d');
         context.drawImage(bodyImg, 0, 0, 1500, 1500);
-        context.drawImage(headImg, 0, 0, 1500, 1500);
         context.drawImage(collarImg, 0, 0, 1500, 1500);
+        context.drawImage(headImg, 0, 0, 1500, 1500);
 
         // Create link to image
         const a = document.createElement('a');
