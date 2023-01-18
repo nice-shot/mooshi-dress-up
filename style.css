@@ -11,7 +11,7 @@ body {
     font-family: 'Abraham-Regular';
     direction: rtl;
     text-align: center;
-    font-size: 6em;
+    font-size: 5em;
     /* letter-spacing: 2px; */
     color: #F0DA74;
     box-sizing: border-box;
@@ -29,13 +29,17 @@ body {
 #game {
     width: 50em;
     height: 50em;
-    margin-top: -1em;
+    margin-top: -3em;
 }
 
 #game > div {
     position: absolute;
     width: inherit;
     height: inherit;
+}
+
+#mooshi-container {
+    transform: scale(0.75) translateX(-1em);
 }
 
 #mooshi-container > img {
@@ -46,29 +50,29 @@ body {
 
 #buttons-container > input {
     position: absolute;
-    height: 6em;
+    height: 5em;
     font-size: inherit;
 }
 
 #btn-next-head {
     top: 14em;
-    right: 10em;
+    right: 9em;
 }
 
 #btn-prev-head {
     top: 14em;
-    left: 8.5em;
+    left: 7.5em;
     transform: scaleX(-1);
 }
 
 #btn-next-body {
     top: 28em;
-    right: 5em;
+    right: 4em;
 }
 
 #btn-prev-body {
     top: 28em;
-    left: 4em;
+    left: 3em;
     transform: scaleX(-1);
 }
 

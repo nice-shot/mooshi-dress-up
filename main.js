@@ -1,4 +1,6 @@
-const OUTFITS = ['default', 'joker', 'tiger'];
+const BODYS = ['default', 'tiger', 'bee' ];
+const HEADS = ['default', 'tiger', 'bee', 'joker', 'bandana', 'killer', 'yamaka'];
+const COLLARS = ['default', 'tiger', 'joker'];
 
 function loadImage(src) {
     return new Promise((resolve, reject) => {
@@ -16,10 +18,15 @@ function mod(n, m) {
 async function main() {
     // Load images
     const imageLoaders = [];
-    OUTFITS.forEach(outfit => {
-        imageLoaders.push(loadImage(`img/mooshi-body-${outfit}.png`));
-        imageLoaders.push(loadImage(`img/mooshi-head-${outfit}.png`));
+    BODYS.forEach(body => {
+        imageLoaders.push(loadImage(`img/mooshi-body-${body}.png`));
     });
+    HEADS.forEach(head => {
+        imageLoaders.push(loadImage(`img/mooshi-head-${head}.png`))
+    })
+    COLLARS.forEach(collar => {
+        imageLoaders.push(loadImage(`img/mooshi-collar-${collar}.png`))
+    })
     
     await Promise.all(imageLoaders);
     console.log('All images loaded!');
@@ -32,32 +39,37 @@ async function main() {
     let headIndex = 0;
 
     function updateImages() {
-        bodyImg.src = `img/mooshi-body-${OUTFITS[bodyIndex]}.png`;
-        headImg.src = `img/mooshi-head-${OUTFITS[headIndex]}.png`;
+        bodyImg.src = `img/mooshi-body-${BODYS[bodyIndex]}.png`;
+        headImg.src = `img/mooshi-head-${HEADS[headIndex]}.png`;
+        let collarName = COLLARS[0]; // Start with default collar
+        if (COLLARS.includes(HEADS[headIndex])) {
+            collarName = HEADS[headIndex];
+        }
+        collarImg.src = `img/mooshi-collar-${collarName}.png`;
     }
 
     // Setup buttons
     const nextBody = document.getElementById('btn-next-body');
     nextBody.onclick = () => {
-        bodyIndex = mod(bodyIndex + 1, OUTFITS.length);
+        bodyIndex = mod(bodyIndex + 1, BODYS.length);
         updateImages();
     }
 
     const prevBody = document.getElementById('btn-prev-body');
     prevBody.onclick = () => {
-        bodyIndex = mod(bodyIndex - 1, OUTFITS.length);
+        bodyIndex = mod(bodyIndex - 1, BODYS.length);
         updateImages();
     }
 
     const nextHead = document.getElementById('btn-next-head');
     nextHead.onclick = () => {
-        headIndex = mod(headIndex + 1, OUTFITS.length);
+        headIndex = mod(headIndex + 1, HEADS.length);
         updateImages();
     }
 
     const prevHead = document.getElementById('btn-prev-head');
     prevHead.onclick = () => {
-        headIndex = mod(headIndex - 1, OUTFITS.length);
+        headIndex = mod(headIndex - 1, HEADS.length);
         updateImages();
     }
 
