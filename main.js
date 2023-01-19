@@ -94,7 +94,7 @@ async function main() {
     }
 
     // Add particle click effects
-    document.addEventListener('click', throwBall);
+    // document.addEventListener('click', throwBall);
 }
 
 window.onload = main;
