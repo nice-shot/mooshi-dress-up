@@ -1,5 +1,5 @@
 const BODYS = ['default', 'tiger', 'bee', 'doctor', 'angle', 'joker', 'joker2', 'miku', 'noah' ];
-const HEADS = ['default', 'tiger', 'bee', 'doctor', 'angle', 'joker', 'joker2', 'miku', 'bandana', 'killer', 'yamaka'];
+const HEADS = ['default', 'tiger', 'bee', 'doctor', 'angle', 'joker', 'joker2', 'miku', 'noah', 'bandana', 'killer', 'yamaka'];
 const COLLARS = ['default', 'tiger', 'joker', 'doctor', 'miku', 'noah'];
 
 function loadImage(src) {
