@@ -1,6 +1,6 @@
-const BODYS = ['default', 'tiger', 'bee' ];
-const HEADS = ['default', 'tiger', 'bee', 'joker', 'bandana', 'killer', 'yamaka'];
-const COLLARS = ['default', 'tiger', 'joker'];
+const BODYS = ['default', 'tiger', 'bee', 'doctor', 'angle', 'joker', 'joker2', 'miku', 'noah' ];
+const HEADS = ['default', 'tiger', 'bee', 'doctor', 'angle', 'joker', 'joker2', 'miku', 'bandana', 'killer', 'yamaka'];
+const COLLARS = ['default', 'tiger', 'joker', 'doctor', 'miku', 'noah'];
 
 function loadImage(src) {
     return new Promise((resolve, reject) => {
