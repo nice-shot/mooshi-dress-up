@@ -112,3 +112,19 @@ particle {
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+#upper-footer {
+    display: flex;
+    justify-content: center;
+    transform: rotate(-5deg);
+}
+#lower-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.75)
+}
+
+#lower-footer > a {
+    margin: 10px;
+}
