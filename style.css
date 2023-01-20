@@ -57,25 +57,30 @@ body {
     font-size: inherit;
 }
 
+#buttons-container > input:hover {
+    transition-duration: 0.1s;
+    filter: brightness(85%);
+  }
+
 #btn-next-head {
     top: 14em;
-    right: 9em;
+    right: 5em;
 }
 
 #btn-prev-head {
     top: 14em;
-    left: 7.5em;
+    left: 3.5em;
     transform: scaleX(-1);
 }
 
 #btn-next-body {
     top: 28em;
-    right: 4em;
+    right: 1em;
 }
 
 #btn-prev-body {
     top: 28em;
-    left: 3em;
+    left: 0em;
     transform: scaleX(-1);
 }
 
