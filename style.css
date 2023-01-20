@@ -7,6 +7,19 @@ body {
     background: #b1453b;
 }
 
+#loader {
+    font-family: 'Abraham-Regular';
+    direction: rtl;
+    position: relative;
+    text-align: center;
+    font-size: 5em;
+    color: #F0DA74;
+    box-sizing: border-box;
+    text-shadow: 3px 3px 0px #2b1d00;
+    margin: 0px;
+    top: 40vh;
+}
+
 #title {
     font-family: 'Abraham-Regular';
     direction: rtl;

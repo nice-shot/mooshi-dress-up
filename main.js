@@ -134,6 +134,12 @@ async function main() {
         document.body.removeChild(a);
     }
 
+    // Show content after loading
+    const page = document.getElementById('page-container');
+    const loader = document.getElementById('loader');
+    loader.style.display = "none";
+    page.style.display = "block";
+
     // Add particle click effects
     // document.addEventListener('click', throwBall);
 }
