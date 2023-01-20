@@ -133,3 +133,37 @@ particle {
 #lower-footer > a {
     margin: 10px;
 }
+
+#eyesContainer {
+    display: flex;
+    position: absolute;
+    top: 185px;
+    left: 235px;
+}
+
+#eyesContainer > * {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: #fdfadc;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+
+#eyesContainer > *::before {
+    content: "";
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+#eyeR {
+    left: 40px;
+}
