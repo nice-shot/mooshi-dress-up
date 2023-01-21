@@ -16,9 +16,24 @@ body {
     color: #F0DA74;
     box-sizing: border-box;
     text-shadow: 3px 3px 0px #2b1d00;
-    margin: 0px;
-    top: 40vh;
+    top: 30vh;
 }
+
+#loading-text {
+    transform: translateX(-20px);
+}
+
+#loading-icon {
+
+    margin: 30px;
+    animation: spin 3s linear infinite;
+    transform-origin: 64px 58px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
 
 #title {
     font-family: 'Abraham-Regular';
