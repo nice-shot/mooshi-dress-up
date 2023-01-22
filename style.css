@@ -150,7 +150,7 @@ particle {
 #upper-footer {
     display: flex;
     justify-content: center;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 
 #upper-footer > a > img {
@@ -163,12 +163,11 @@ particle {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.75)
 }
 
 .lower-footer > a {
     margin: 0 4em;
-    height: 8em;
+    height: 5em;
 }
 
 .lower-footer > a > img {
@@ -177,12 +176,12 @@ particle {
 }
 
 #link-meyzam {
-    height: 12em;
+    height: 8em;
     margin-right: 1em;
 }
 
 #link-hive {
-    height: 7em;
+    padding-right: 4em;
 }
 
 #eyesContainer {
