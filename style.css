@@ -61,6 +61,7 @@ body {
     width: 50em;
     height: 50em;
     margin-top: -3em;
+    margin-bottom: -5em;
 }
 
 #game > div {
@@ -128,7 +129,7 @@ body {
     background: #ecdd79;
     border-style: none;
     filter: drop-shadow(3px 3px 0px #2b1d00);
-    margin-bottom: 4em;
+    margin-bottom: 2.5em;
 }
 
 #btn-download:active {
@@ -149,17 +150,39 @@ particle {
 #upper-footer {
     display: flex;
     justify-content: center;
-    transform: rotate(-5deg);
+    margin-bottom: 4em;
 }
-#lower-footer {
+
+#upper-footer > a > img {
+    height: 8em;
+    transform: rotate(355deg);
+    filter: drop-shadow(4px 4px 0px #8c3a2d);
+}
+
+.lower-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     transform: scale(0.75)
 }
 
-#lower-footer > a {
-    margin: 10px;
+.lower-footer > a {
+    margin: 0 4em;
+    height: 8em;
+}
+
+.lower-footer > a > img {
+    filter: drop-shadow(4px 4px 0px #8c3a2d);
+    height: inherit;
+}
+
+#link-meyzam {
+    height: 12em;
+    margin-right: 1em;
+}
+
+#link-hive {
+    height: 7em;
 }
 
 #eyesContainer {
